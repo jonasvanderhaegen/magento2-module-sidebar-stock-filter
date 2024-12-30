@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="jvdhstockfilter" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Jvdh SidebarStockFilter</label>
+            <tab>jvdh</tab>
+            <resource>Jvdh_SidebarStockFilter::configuration</resource>
+            <group id="general" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>General Configuration</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show quantity filter on category page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Select <b>Yes</b> to let products be update attribute "custom_filter_stock" (which is the product attribute) when editing product as admin, stock update by odoo and orders placed.
+                    a stock filter will appear in sidebar on category pages in case one or more products have a value for "custom_filter_qty"]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <event name="checkout_onepage_controller_success_action">
+        <observer name="jvdhcustomstockfilter_update_filter_stock_value_by_order" instance="Jvdh\SidebarStockFilter\Observer\UpdateFilterStockValueByOrder"/>
+    </event>
+
+    <event name="cataloginventory_stock_item_save_before">
+        <observer name="jvdhcustomstockfilter_update_filter_stock_value" instance="Jvdh\SidebarStockFilter\Observer\UpdateFilterStockValue"/>
+    </event>
+
+    <event name="catalog_product_edit_action">
+        <observer name="jvdhcustomstockfilter_update_lock_filter_stock" instance="Jvdh\SidebarStockFilter\Observer\LockAttributeForEdit"/>
+    </event>
+
+</config>
