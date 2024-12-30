@@ -9,7 +9,7 @@ The primary goal of this module is to:
 - Provide flexibility to configure and manage the attribute in the admin panel.
 - Support seamless integration with product and category filtering mechanisms.
 
-In this case, at the company Odoo was updating the quantity for majority if the products, when it updates qty through api call it also updates 'custom_filter_qty'. Because the attribute is type "price" as a visitor you can then use the range slider in the navigation sidebar to select range for quantity.
+In this case, at the company Odoo was updating the quantity for majority of the products, when it updates qty through api call it also updates 'custom_filter_qty'. Because the attribute is type "price" as a visitor you can then use the range slider in the navigation sidebar to select range for quantity.
 
 ## Features
 
